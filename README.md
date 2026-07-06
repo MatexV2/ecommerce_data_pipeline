@@ -8,20 +8,19 @@ This project presents a simple end-to-end data pipeline built on an e-commerce d
 
 ## Project Architecture
 
-Raw CSV
-   │
-   ▼
-Python ETL
-   │
-   ▼
-PostgreSQL
-(Fact + Dimension Tables)
-   │
-   ▼
-SQL Analytics
-   │
-   ▼
-Power BI Dashboard
+```mermaid
+flowchart TD
+    A[Raw CSV Data]
+    B[Python ETL]
+    C[PostgreSQL<br/>Fact & Dimension Tables]
+    D[SQL Analytics]
+    E[Power BI Dashboard]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
 
 ## Tech Stack
 
@@ -82,22 +81,30 @@ The dashboard includes:
 
 ## Repository Structure
 
+```text
 ecommerce-data-pipeline/
 │
 ├── data/
 │   ├── Raw/
+│   │   └── Online_Retail.csv
 │   └── Processed/
+│       └── cleaned_online_retail.csv
+│
 ├── docs/
 │   └── BI-1.PNG
+│
 ├── sql/
 │   ├── analytics_queries.sql
 │   ├── dim_customers.sql
 │   ├── dim_products.sql
 │   └── fact_sales.sql
+│
 ├── src/
 │   ├── explore_data.py
 │   ├── clean_data.py
 │   └── load_to_postgres.py
+│
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
