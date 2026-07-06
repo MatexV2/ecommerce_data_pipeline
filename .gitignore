@@ -1,0 +1,25 @@
+# IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.env/
+
+# Data (opcjonalnie - jeśli nie chcesz wrzucać surowych danych)
+data*/raw/
+data*/processed/
+
+# System files
+.DS_Store
+
+# Jupyter Notebook checkpoints
+notebooks/.ipynb_checkpoints/
+
+# Logs
+*.log
