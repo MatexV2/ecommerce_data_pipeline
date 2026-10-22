@@ -2,8 +2,6 @@
 
 ## Project Description
 
-Project description
-
 This project presents a simple end-to-end data pipeline built on an e-commerce dataset. The data is cleaned in Python, loaded into PostgreSQL, transformed into a star schema, analyzed with SQL, and visualized in Power BI.
 
 ## Project Architecture
