@@ -11,7 +11,7 @@ __pycache__/
 venv/
 .env/
 
-# Data (opcjonalnie - jeśli nie chcesz wrzucać surowych danych)
+# Data 
 data*/raw/
 data*/processed/
 
