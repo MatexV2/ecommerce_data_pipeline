@@ -7,13 +7,18 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Virtual environment
+# Virtual environments
 venv/
-.env/
+.venv/
+
+# Local environment configuration
+.env
+.env.*
+!.env.example
 
 # Data 
-data*/raw/
-data*/processed/
+data/raw/
+data/processed/
 
 # System files
 .DS_Store
