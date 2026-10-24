@@ -1,7 +1,12 @@
-import pandas as pd
-file_path = 'Data/Raw/Online_Retail.csv'
+from pathlib import Path
 
-df = pd.read_csv(file_path)
+import pandas as pd
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+file_path = BASE_DIR / "data" / "raw" / "online_retail.csv"
+
+df = pd.read_csv(file_path, encoding="latin1")
 
 print(df.head())
 print(df.info())
